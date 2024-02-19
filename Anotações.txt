@@ -1,0 +1,56 @@
+Anotações de java script
+Operadores
+5 / 2 = 2,5 = Divsão
+
+5 % 2 = 1 = resto da Divisão
+
+5 ** 2 = 25 = ao quadrado
+teste
+ 
+
++ = concatenação
+
+window.alert =  abre um popup
+
+window.confrm = popup para confirmar
+
+window.prompt = popup para responder algo
+ 
+NumberparseFloat = flutuante
+
+NumberparseInt = interio
+
+Number(n) = js decide 
+
+concatenação = ("O aluno,+nome")
+
+concatenação template string = (`O aluno ${nome}`)
+
+nomestring.length = quantos caracteres a string tem
+
+nomestring.tiUppperCase() = tudo para Maiúsculo
+
+nomestring.toLowerCase() = tudo para minúsculo
+
+.toFixed() = põe ponto na casa desejada
+.toFixed().reaplace('.',',') = troca ponto por virgula
+
+{ exemplo
+n1 = 1545,50
+n1.toLocaleString('pt-BR',{style:'currency',currency:'BRL'})
+
+R$ 1545,50
+deixa o valor em real
+
+
+n1.toLocaleString('pt-BR',{style:'currency',currency:'USD'})
+
+US$ 1545,50
+deixa o valor em dolar
+
+
+n1.toLocaleString('pt-BR',{style:'currency',currency:'EUR'})
+
+€ 1545,50
+deixa o valor em euro 
+}
