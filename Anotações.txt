@@ -5,12 +5,45 @@ Operadores
 5 % 2 = 1 = resto da Divisão
 
 5 ** 2 = 25 = ao quadrado
+________________________________________
 
+Ordem de precedência operador aritmetico 
+1  ()
+2  **
+3  * / % quem aparecer primeiro
+da esquerda pra direita
 
-teste teste teste
+primeiro operadores aritmetico depois relacionais
+________________________________________
 
+Auto atribuição   e     simplicaficação
+var n = 3
+n = n + 4 (n+=4)        n = n / 2  (n/=2)
+n = n - 5 (n-=5)        n = n** 2  (n**=2)
+n = n * 4 (n*=4)        n = n % 5  (n%=5) 
+_________________________________________
+Pré incremento e  Pós incremento
+n = 10
+n++ incrementa 1 depois do ciclo
+++n incrementa 2 antes  do ciclo
+
+n-- tira 1 depois do ciclo
+--n tira 1 antes  do ciclo
+__________________________________________
+
+Operadores Relacionais
+
+5 > 2 true/maior              9 <= 7 false/menor ou igual
+
+7 < 4 menor/false             5 == 5 true/ igual/comparação
+
+8 >= 8 igual/maior ou igual   4 != 4 false/diferente
 
  
+ 
+
+
+
 
 + = concatenação
 
