@@ -5,7 +5,9 @@ Operadores
 5 % 2 = 1 = resto da Divisão
 
 5 ** 2 = 25 = ao quadrado
-teste
+
+
+teste teste teste
 
 
  
