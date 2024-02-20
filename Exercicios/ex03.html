@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+    <style>
+        body {
+            background-color: black;
+            color:white;
+            font-family: Arial, Helvetica, sans-serif;   
+        }
+
+        div {
+            background-color: lightgray;
+            width:100px;
+            padding: 10px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        div:hover {
+            background-color: red;
+            color: black;
+            transition-duration: 1.5s;
+
+        }
+    
+    </style>
+</head>
+<body>
+
+    <h1>Testando o <strong>DOM</strong></h1>
+
+    <p>Estou acordando muita tarde!</p>
+
+    <p>Preciso me diciplinar!</p>
+    <div>
+        clique em mim
+    </div>
+    <script>
+        var p0 = window.document.getElementsByTagName('p') [0]
+        window.document.write('Será que vai aparecer o p do html? ' + p0.innerText)
+        window.document.write(`Apareceu ${p0.innerText}`) 
+
+    </script>
+    
+</body>
+</html>
