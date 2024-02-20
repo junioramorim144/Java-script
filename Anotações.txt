@@ -5,6 +5,14 @@ Operadores
 5 % 2 = 1 = resto da Divisão
 
 5 ** 2 = 25 = ao quadrado
+
+!= diferentes
+
+!== desigual restrito
+
+== iguais
+
+=== identico
 ________________________________________
 
 Ordem de precedência operador aritmetico 
@@ -35,16 +43,25 @@ Operadores Relacionais
 
 5 > 2 true/maior              9 <= 7 false/menor ou igual
 
-7 < 4 menor/false             5 == 5 true/ igual/comparação
+7 < 4 menor/false             5 == '5' true/ igual/comparação
+                              
+                              5 === '5' false/identico 
 
-8 >= 8 igual/maior ou igual   4 != 4 false/diferente
+8 >= 8 igual/maior ou igual   4 != '4' false/diferente
+
+                              4 !== '4' true/desigual restrito
+
+_______________________________________________________________
+
+ Operadores Logicos
+
+! = negação
+
+&& = ou 
+
+|| = 
 
  
- 
-
-
-
-
 + = concatenação
 
 window.alert =  abre um popup
