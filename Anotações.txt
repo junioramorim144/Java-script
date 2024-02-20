@@ -122,6 +122,7 @@ nomestring.length = quantos caracteres a string tem
 nomestring.tiUppperCase() = tudo para Maiúsculo
 
 nomestring.toLowerCase() = tudo para minúsculo
+______________________________________________________
 
 .toFixed() = põe ponto na casa desejada
 .toFixed().reaplace('.',',') = troca ponto por virgula
@@ -145,3 +146,42 @@ n1.toLocaleString('pt-BR',{style:'currency',currency:'EUR'})
 € 1545,50
 deixa o valor em euro 
 }
+______________________________________________________________
+
+Mexendo no html por java script
+
+por Name   = window.document.getElementsByTagName ('')[]
+
+por Id     = window.document.getElementById('')
+
+por classe = window.document.getElementsByClassName('')[]
+
+Id/ class = window.document.querySelector ('div/p/..#id')
+            window.document.querySelector ('div/p/.class')
+__________________________________________________________
+
+ Eventos Dom interagindo com o mouse
+
+
+onclick  onmouseenter  onmmouseout
+--------------------------------------------------------------------
+   no html
+
+<div id="area" onclick="clicar ()" onmouseenter="entrar()" onmouseout="saiu ()">
+--------------------------------------------------------------------------
+
+--------------------------------------------------------------------------
+No java script
+
+ a.addEventListener ('click',clicar)
+        a.addEventListener ('mouseenter',entrar)
+        a.addEventListener ('mouseout',saiu)
+____________________________________________________________
+
+  
+
+
+
+
+
+

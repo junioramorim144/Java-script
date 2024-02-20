@@ -29,11 +29,11 @@
 </head>
 <body>
 
-    <h1>Testando o <strong>DOM</strong></h1>
+    <h1 id="tt">Testando o <strong>DOM</strong></h1>
 
-    <p>Estou acordando muita tarde!</p>
+    <p id="p0">Estou acordando muita tarde!</p>
 
-    <p>Preciso me diciplinar!</p>
+    <p class="p1">Preciso me diciplinar!</p>
     <div>
         clique em mim
     </div>
@@ -41,7 +41,17 @@
         var p0 = window.document.getElementsByTagName('p') [0]
         window.document.write('Será que vai aparecer o p do html? ' + p0.innerText)
         window.document.write(`Apareceu ${p0.innerText}`) 
+         var tt2 = window.document.getElementById('tt')
+         tt2.innerText = 'Testando o Dom com java script'
 
+         //var p2 = window.document.getElementsByClassName('p1') [1]
+         //p2.innerText = 'testando com java script'
+
+          var p2 = window.document.querySelector(' p.p1')
+          p2.innerText = 'testando com java script'
+
+          var  pp = window.document.querySelector('p#p0')
+          pp.innerText = 'meio confuso isso tudo'
     </script>
     
 </body>
