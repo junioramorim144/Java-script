@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velocidades</title>
+</head>
+<body>
+     <h1>Velocidades permitidas</h1>
+
+     Velocidades: <input type="number" name="velo" id="velo"> km/h
+     <input type="button" value="verificar" onclick="calcular()">
+     <div id="res"></div>
+
+     <script>
+        function calcular() {
+            var vel = document.getElementById("velo")
+            var res = document.getElementById("res")
+            var v = Number(vel.value)
+
+            res.innerHTML = `Sua velocidade é de ${v}km/h <br> Sempre dirija com o cinto de segurança`
+            
+            if (v > 60) { 
+             res.innerHTML = 'Voce está multado por exesso de velocidade!'
+            } 
+               
+
+        }
+     </script>
+
+  
+    
+</body>
+</html>
