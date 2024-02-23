@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Votos</title>
+</head>
+<body> 
+    <h1>Saiba se você precisa votar</h1>
+    <p>basta por sua idade abaixo</p>
+
+    
+    <input type="number" name="vt" id="vt">
+    <input type="button" value = "verificar" onclick = "calcular ()">
+    <div id="res">
+        Resultado
+    </div>
+
+    <script>
+        function calcular (){
+          var vt2 = document.querySelector('input#vt')
+          var v = Number(vt2.value)
+
+          
+          
+          if (v <= 15) {
+            res.innerHTML =(`Não é preciso votar! <br> Você tem apenas ${v} anos `)
+          }
+
+          else if ( v >= 18 && v <= 70 ) {
+            res.innerHTML = (`Você é obridado a votar!`)
+
+
+          }
+          
+          else if (v >= 16) {
+            res.innerHTML = (`seu voto é opcional`)
+
+            
+          }
+
+          else if (v > 70) {  
+            innerHTML = (`Seu voto não é mais obrigatorio!`)
+        
+        } 
+          
+
+          
+          
+        
+
+          
+
+        
+
+        }
+    </script>
+
+    
+</body>
+</html>
