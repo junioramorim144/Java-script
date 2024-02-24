@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dias da semana</title>
+</head>
+<body>
+
+    <h1>Testando o switch</h1>
+
+    <input type="number" name="dia" id="dia">
+    <input type="button" value ="verificar" onclick="calculo ()">
+    <div id="res">Resultado</div>
+
+
+
+<script>
+    function calculo () {
+      var d = document.getElementById('dia')
+      var d = Number(d.value)
+
+
+
+      switch (d) {
+         case 0:
+              res.innerHTML = (`domingo`)
+              break
+        case 1:
+              res.innerHTML =('segunda')
+              break
+        case 2:
+              res.innerHTML = ('terça')
+              break
+        case 3:       
+              res.innerHTML = ('quarta')
+              break
+        case 4: 
+              res.innerHTML = ('quinta')
+              break
+        case 5: 
+              res.innerHTML = ('sexta')
+              break
+        case 6: 
+              res.innerHTML = ('sabado')
+              break
+        default:
+              res.innerHTML = ('Erro só vai até o numero '+ '6!')
+              break       
+              
+              
+    }
+    
+        
+
+
+    }
+</script>
+    
+</body>
+</html>

@@ -95,6 +95,13 @@ média >= 7.0 ? "Aprovado": "Reprovado"
 
 ___________________________________________________________
 
+como pegar a hora atual
+
+var agora = new Date()
+var hora  = agora.getHours()
+
+
+
  
 
 
@@ -178,7 +185,17 @@ No java script
         a.addEventListener ('mouseout',saiu)
 ____________________________________________________________
 
-  
+
+
+switch ( var )
+  case 0:
+       consolo.log ('vai para a tela')
+       break
+  case 1:
+       console.log('vai para a tela')
+       break
+
+  default:  
 
 
 
