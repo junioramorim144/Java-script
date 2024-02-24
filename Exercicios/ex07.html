@@ -4,6 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Votos</title>
+
+    <style>
+
+      body{
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      p {
+        font-size: 1.3em;
+        font-variant: small-caps;
+      }
+
+      h1 {
+        font-variant: small-caps;
+      }
+
+      div#res {
+        font-variant: small-caps;
+        margin-top: 10px;
+      }
+
+
+
+
+    </style>
 </head>
 <body> 
     <h1>Saiba se você precisa votar</h1>
@@ -24,25 +49,27 @@
           
           
           if (v <= 15) {
-            res.innerHTML =(`Não é preciso votar! <br> Você tem apenas ${v} anos `)
+            res.innerHTML =(`Não é preciso votar! <br> Você tem apenas ${v} anos. `)
           }
+
 
           else if ( v >= 18 && v <= 70 ) {
             res.innerHTML = (`Você é obridado a votar!`)
-
-
           }
-          
-          else if (v >= 16) {
-            res.innerHTML = (`seu voto é opcional`)
 
-            
-          }
 
           else if (v > 70) {  
-            innerHTML = (`Seu voto não é mais obrigatorio!`)
-        
-        } 
+            res.innerHTML = (`Seu voto não é mais obrigatorio!`)
+          }
+
+          
+          else if (v >= 16) {
+            res.innerHTML = (`Seu voto é opcional.`)
+          }
+            
+         
+
+          
           
 
           
