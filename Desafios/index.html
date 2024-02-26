@@ -34,6 +34,17 @@
             padding-left: 20px;
             
         }
+
+        #res {
+            width: 500px;
+            color:white;
+            text-align: center;
+            padding-top: 9px;
+            margin: auto;
+            border-radius: 10px;
+            background-color: black;
+            
+        }
         
 
         
@@ -52,12 +63,52 @@
            <div id="branca">
               <p>Ano de Nascimento: <input type="number" name="txtnasc" id="txtnasci">
            </p>
+           
             <p>Sexo:<input type="radio" name = "radsex" id="mas" checked>
                     <label for="mas">Masculino</label> 
                     <input type="radio" name = "radsex" id="fem">  
                     <label for="fem">Feminino</label> 
-                             
-            </p>           
+                    <input type="button" value="Verificar" onclick="clicar()">
+                </p>
+                <div id="res"><p>Resultado será impresso aqui.</p></div>
+                
+                <script>
+                    function clicar () {
+                        var data =  new Date()
+                        var ano  =  data.getFullYear()
+                        var fano  =  document.querySelector('input#txtnasci') 
+                        var  m   =  document.querySelector('input#mas')
+                        var  f   =  document.querySelector('input#fem')
+                        var res  =  document.querySelector('div#res')
+
+
+                       
+                        
+
+                    if ( fano.value.length == 0 || fano.value > ano) {
+                        res.innerHTML = (`[Erro!!] Verifique os dados e tente novamente`)
+                    }
+
+                    else{
+                        var fsex = document.getElementsByName( 'radsex')
+                        var idade = ano - Number (fano.value)
+                        var genero = ''
+                    }
+                    if (fsex[0].checked) {
+                        genero = 'Homen'
+                    }
+                    else if (Fsex[1].checked) {
+                        gerero = 'Mulher'
+                    }
+
+                    res.innerHTML = (`Detectamos ${genero} com ${idade} anos.`)
+                         
+                    
+
+
+                    }
+                </script>
+                      
            
            
            
