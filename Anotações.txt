@@ -13,6 +13,14 @@ Operadores
 == iguais
 
 === identico
+_____________________________
+Estrutura de repetições
+
+while = enquanto
+
+do while = enquanto faça
+
+for = 
 
 
 ________________________________________

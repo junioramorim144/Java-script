@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contando...</title>
+
+    <style>
+        body {
+            background-color: lightgrey;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1 {
+            text-align: center;
+        }
+
+        div#maior {
+            background-color: white;
+            height: 200px;
+            width : 500px;
+            padding: 15px;
+            margin: auto;
+            border-radius: 10px;
+
+        }
+
+        input {
+            margin: 10px;
+            
+            
+        }
+
+        div#res {
+            width: 500px;
+        }
+
+        footer {
+            text-align: center
+            
+        }
+         
+       
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Contando</h1>
+    </header>
+
+    <div id="maior">
+        Inicio:<input type="number" name="txtin" id="txtin"><br>
+        Fim:<input type="number" name="txtfim" id="txtfim"><br>
+        Passo:<input type="number" name="txtpasso" id="txtpasso"><br>
+        <input type="button" value="contar" onclick="Calcular()">
+
+        
+
+
+        <div id="res">
+            <p>contando...</p>
+        </div>
+    </div>
+    
+    <footer>
+      <p><a href="https://www.cursoemvideo.com/" target="_blank">@CursoemVideo</a></p>        
+    </footer>
+
+    <script>
+        function Calcular () {
+            var ini   = document.querySelector('input#txtin')
+            var fim   = document.querySelector('input#txtfim')
+            var passo = document.querySelector('input#txtpasso')
+            var res   = document.querySelector('div#res')
+            
+            var i = Number(ini.value)
+            var f =  Number(fim.value)
+            var p = Number(passo.value) 
+            
+
+
+            if 
+             (ini.value.length == 0 || fim.value.length == 0 || passo.value.length == 0 ) {
+                
+                window.alert ("OPs!! erro na digitação")
+            }
+            else {
+                 for (var c = i ; c <= f; c += p) { 
+                res.innerHTML += `${c}`
+
+           
+            }
+           
+          }
+
+        }  
+
+
+
+
+
+
+            
+
+            
+
+
+           
+
+            
+    </script>
+</body>
+</html>
