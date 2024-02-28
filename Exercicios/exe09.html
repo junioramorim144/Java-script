@@ -8,15 +8,14 @@
     <style>
         body {
             background-color: lightgrey;
-            font-family: Arial, Helvetica, sans-serif;
+            font:normal 15pt Arial;
         }
-        h1 {
+        header{
             text-align: center;
         }
 
-        div#maior {
+        section {
             background-color: white;
-            height: 200px;
             width : 500px;
             padding: 15px;
             margin: auto;
@@ -24,20 +23,12 @@
 
         }
 
-        input {
-            margin: 10px;
-            
-            
-        }
-
-        div#res {
-            width: 500px;
-        }
 
         footer {
             text-align: center
-            
         }
+        
+        
          
        
     </style>
@@ -48,23 +39,29 @@
         <h1>Contando</h1>
     </header>
 
-    <div id="maior">
-        Inicio:<input type="number" name="txtin" id="txtin"><br>
-        Fim:<input type="number" name="txtfim" id="txtfim"><br>
-        Passo:<input type="number" name="txtpasso" id="txtpasso"><br>
-        <input type="button" value="contar" onclick="Calcular()">
+    <section>
 
-        
+        <div >
+            <p>Inicio: <input type="number" name="txtin" id="txtin"></p>
 
+            <p>Fim: <input type="number" name="txtfim" id="txtfim"></p>
+
+            <p>Passo: <input type="number" name="txtpasso"id="txtpasso"></p>
+
+            <input type="button" value="contar" onclick="Calcular()">
+        </div>
 
         <div id="res">
-            <p>contando...</p>
+                <p><strong>Resultado aqui</strong></p>
         </div>
-    </div>
+
+    </section>
     
     <footer>
+
       <p><a href="https://www.cursoemvideo.com/" target="_blank">@CursoemVideo</a></p>        
     </footer>
+
 
     <script>
         function Calcular () {
@@ -72,10 +69,12 @@
             var fim   = document.querySelector('input#txtfim')
             var passo = document.querySelector('input#txtpasso')
             var res   = document.querySelector('div#res')
+
+                var i =  Number(ini.value)
+                var f =  Number(fim.value)
+                var p =  Number(passo.value)
             
-            var i = Number(ini.value)
-            var f =  Number(fim.value)
-            var p = Number(passo.value) 
+           
             
 
 
@@ -83,31 +82,31 @@
              (ini.value.length == 0 || fim.value.length == 0 || passo.value.length == 0 ) {
                 
                 window.alert ("OPs!! erro na digitação")
+            } else {  
+                
+                res.innerHTML = 'Contando:'
+                if (i < f){
+                for (var c = i ; c <= f; c += p) { 
+                res.innerHTML += `${c} \u{1f449} `
+              }
             }
-            else {
-                 for (var c = i ; c <= f; c += p) { 
-                res.innerHTML += `${c}`
+            else{
+                for ( var c = i ; c >= f; c -= p) {
+                    res.innerHTML += `${c} \u{1f449} `
 
-           
-            }
-           
-          }
-
-        }  
-
-
-
-
-
+                }
+            }    
 
             
+        } res.innerHTML += `\u{1f3C1}`
+    }        
 
             
-
-
            
 
-            
+           
+          
+         
     </script>
 </body>
 </html>
