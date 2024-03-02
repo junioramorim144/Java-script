@@ -109,6 +109,20 @@ var agora = new Date()
 var hora  = agora.getHours()
 
 
+_________________________________________________________
+          Vetores
+
+let num = [5, 8, 4]
+
+num [3] = posição = adiciona na ultima posição do array
+ 
+num.push(7) = adiona de forma automatica para utlima posição
+
+num.length
+
+num.sort() 
+
+
 
  
 
