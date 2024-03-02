@@ -20,7 +20,7 @@ while = enquanto
 
 do while = enquanto faça
 
-for = 
+for =  para
 
 
 ________________________________________
