@@ -222,5 +222,52 @@ switch ( var )
 
 
 
+________________________________________________________________________
+
+              Finalizei o curso de java script 
+
+               O que devo estudar agora?
+
+functions
+
+moludarização 
+
+objetos
+---------
+
+arrow function
+
+callbacks
+
+funções anonimas
+
+ifs (i i f e)
+
+java script funcional 
+
+RegEx
+
+JSON
+
+AJAX
+
+--------------
+  servidor 
+nodejs
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
 
 
