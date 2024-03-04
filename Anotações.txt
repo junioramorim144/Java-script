@@ -107,6 +107,11 @@ como pegar a hora atual
 
 var agora = new Date()
 var hora  = agora.getHours()
+------------------------------
+
+modar a cor do background
+
+ocument.body.style.background =
 
 
 _________________________________________________________
