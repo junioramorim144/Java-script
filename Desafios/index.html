@@ -77,7 +77,7 @@ text-align: center
                 </p>
                 <div id="res">
                     <p>Resultado será impresso aqui.</p>
-                    <img id="foto" src="imagens/homem-jovem.png" alt="">
+                    <img id="img" src="imagens/homem-jovem.png" alt="fotos">
                 </div>
                 
                 <script>
@@ -88,7 +88,8 @@ text-align: center
                         var  m   =  document.querySelector('input#mas')
                         var  f   =  document.querySelector('input#fem')
                         var res  =  document.querySelector('div#res')
-
+                        
+ 
 
                        
                         
@@ -101,40 +102,44 @@ text-align: center
                         var fsex = document.getElementsByName( 'radsex')
                         var idade = ano - Number (fano.value)
                         var genero = ''
-                    }
+                        var img = document.createElement('img')
+                        img.setAttribute('id','foto')
+                    
                     if (fsex[0].checked) {
                         genero = 'Homem'
 
-                        if (idade == 0 || idade < 10) {
-                        res.innerHTML = 'imagens/bebe-homem.png'
-                    } else if (idade < 21 ) {
-                        res.innerHTML = 'imagens/homem-jovem.png'
+                        if (idade >=0 && idade < 10) {
+                        img.src ='imagens/bebe-homem.png'
+                     else if (idade < 21 ) {
+                        img.src = 'imagens/homem-jovem.png'
                     } else if ( idade < 50) {
-                        res.innerHTML = 'imagens/homem-adulto.png'
+                        img.src = 'imagens/homem-adulto.png'
                     } else {
-                        res.innerHTML = 'imagens/homem-idoso.png'
+                        img.src = 'imagens/homem-idoso.png'
+                    }
                     }
 
                     }
                 
-                    else if (Fsex[1].checked) {
-                        gerero = 'Mulher'
+                     else if (fsex[1].checked) {
+                        genero = 'Mulher'
 
 
-                        if (idade == 0 || idade < 10) {
-                        res.innerHTML = 'imagens/bebe-mulher.png'
+                        if (idade >=0 && idade < 10) {
+                        img.src = 'imagens/bebe-mulher.png'
                     } else if (idade < 21 ) {
-                        res.innerHTML = 'imagens/mulher-jovem.png'
+                        img.src = 'imagens/mulher-jovem.png'
                     } else if ( idade < 50) {
-                        res.innerHTML = 'imagens/mulher-adulto.png'
+                        img.src = 'imagens/mulher-adulto.png'
                     } else {
-                        res.innerHTML = 'imagens/mulher-idoso.png'
+                        img.src ='imagens/mulher-idoso.png'
                     }
                         
                         
                     }
 
-                    res.innerHTML = (`Detectamos ${genero} com ${idade} anos.`)
+                    res.innerHTML += (`Detectamos ${genero} com ${idade} anos.`)
+                    res.appendChild(img)
 
                    
 
