@@ -5,58 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contador de idade</title>
     <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: rgba(126, 98, 177, 0.822);
+       body {
+        background: rgb(70, 142, 236);
+        font: normal 15pt Arial;
         }
 
-        div#branca {
-            border-radius: 10px;
-            background-color: white;
-            width : 600px;
-            margin: auto;
-        } 
+       header {
+        color: white;
+        text-align: center;
+       }
+
+       section {
+        background-color: white;
+        border-radius: 10px;
+        padding: 15px;
+        width: 500px;
+        margin: auto;
+        box-shadow:  3px 3px 10px rgba(0, 0, 0, 0.363); 
+       }
+
+       div#fotos {
+        text-align: center;
+       }
         
-        
-        h1 {
-            font-variant: small-caps;
-            color: white;
-            text-align: center;
-        }
-        
-        input {
-            margin-top: 30px;
-            
-        }
-        
-        p {
-            padding-left: 20px;
-            
-        }
+       footer {
+        color: white;
+        font-style: italic;
+        text-align: center   
+      } 
+      
 
-        #res {
-            width: 500px;
-            color:black;
-            text-align: center;
-            padding-top: 9px;
-            margin: auto;
-            border-radius: 10px;
-            background-color: white;
-            
-        }
-
-        footer {
-
-font-style: italic;
-text-align: center
-}
-        
-
-        
-    </style>
-
-
-
+       
+         
+    </style> 
+    
 </head>
 <body>
 
@@ -73,12 +55,33 @@ text-align: center
                     <label for="mas">Masculino</label> 
                     <input type="radio" name = "radsex" id="fem">  
                     <label for="fem">Feminino</label> 
+                    
+                </p>
+                <p>
                     <input type="button" value="Verificar" onclick="clicar()">
                 </p>
-                <div id="res">
-                    <p>Resultado será impresso aqui.</p>
-                    <img id="img" src="imagens/homem-jovem.png" alt="fotos">
+
                 </div>
+                <div id="res">
+                    Resultado será impresso aqui!
+                </div>  
+                
+                <div id="fotos">
+                    <img id="img">
+
+                </div>
+                    
+                
+        </section>
+
+            <footer>
+             <p>feito por junior amorim</p>
+     
+            </footer>
+
+
+
+
                 
                 <script>
                     function clicar () {
@@ -102,26 +105,25 @@ text-align: center
                         var fsex = document.getElementsByName( 'radsex')
                         var idade = ano - Number (fano.value)
                         var genero = ''
-                        var img = document.createElement('img')
-                        img.setAttribute('id','foto')
-                    
+                        /*var img = document.createElement('img')
+                        img.setAttribute('id', 'foto')*/
+
                     if (fsex[0].checked) {
                         genero = 'Homem'
 
                         if (idade >=0 && idade < 10) {
-                        img.src ='imagens/bebe-homem.png'
-                     else if (idade < 21 ) {
-                        img.src = 'imagens/homem-jovem.png'
+                        img.setAttribute('src', 'imagens/bebe-homem.png')
+                    } else if (idade < 21 ) {
+                        img.setAttribute('src', 'imagens/homem-jovem.png')
                     } else if ( idade < 50) {
-                        img.src = 'imagens/homem-adulto.png'
+                        img.setAttribute('src', 'imagens/homem-adulto.png')
                     } else {
-                        img.src = 'imagens/homem-idoso.png'
-                    }
-                    }
+                        img.setAttribute('src', 'imagens/honem-idoso.png')
+                    
 
                     }
-                
-                     else if (fsex[1].checked) {
+                    }
+                    else if (fsex[1].checked) {
                         genero = 'Mulher'
 
 
@@ -130,37 +132,36 @@ text-align: center
                     } else if (idade < 21 ) {
                         img.src = 'imagens/mulher-jovem.png'
                     } else if ( idade < 50) {
-                        img.src = 'imagens/mulher-adulto.png'
+                        img.src = 'imagens/mulher-adulta.png'
                     } else {
-                        img.src ='imagens/mulher-idoso.png'
+                        img.src ='imagens/mulher-idosa.png'
                     }
                         
                         
-                    }
+                }
+                    
+                    res.innerHTML = (`Detectamos ${genero} com ${idade} anos.`)
+                    /*res.appendChild(img)*/
+                    
+                    
 
-                    res.innerHTML += (`Detectamos ${genero} com ${idade} anos.`)
-                    res.appendChild(img)
+                }
 
-                   
+            }   
 
                          
                     
 
 
-                    }
+                    
                 </script>
                       
            
            
            
            
-               </div>
-       </section>
-
-       <footer>
-        <p>feito por junior amorim</p>
-
-       </footer>
+               
+       
 
 
     

@@ -192,6 +192,12 @@ por classe = window.document.getElementsByClassName('')[]
 
 Id/ class = window.document.querySelector ('div/p/..#id')
             window.document.querySelector ('div/p/.class')
+
+
+img pelo js    = var img = document.createElement('img')
+id img pelo js =  img.setAtribute('id','foto')
+
+img filho de res = res.appendChild(img)
 __________________________________________________________
 
  Eventos Dom interagindo com o mouse
