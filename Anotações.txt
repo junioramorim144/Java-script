@@ -228,7 +228,21 @@ switch ( var )
        console.log('vai para a tela')
        break
 
-  default:  
+  default: 
+
+
+
+_________________________________________________________________________
+function 
+
+let soma=function(v1, v2) {return v1+v2}
+
+arrow-function
+ 
+let soma=(v1, v2)=>{return v1 + v2) 
+
+
+console.log(soma(7,8))
 
 
 
