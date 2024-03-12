@@ -18,11 +18,16 @@
             var res = document.getElementById("res")
             var v = Number(vel.value)
 
-            res.innerHTML = `Sua velocidade é de ${v}km/h <br> Sempre dirija com o cinto de segurança`
-            
             if (v > 60) { 
-             res.innerHTML = 'Voce está multado por exesso de velocidade!'
+               res.innerHTML = 'Voce está multado por exesso de velocidade!'
             } 
+
+            else {
+            res.innerHTML = `Sua velocidade é de ${v}km/h <br> Sempre dirija com o cinto de segurança`
+            } 
+            
+            
+            
                
 
         }
