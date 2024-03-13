@@ -103,6 +103,25 @@ média >= 7.0 ? "Aprovado": "Reprovado"
 
 ___________________________________________________________
 
+Operadores de Bitwise 
+
+
+let n1 = 10 
+let n2 = 11
+
+let res = n1 & n2 ( calcula numero binario (tabela verdade and))
+          n1 | n2 (tabela verdade or)
+          n1 ^ n2 (tabela verdade or exclusivo)
+let res = n1<< 1 ( joga um bit para esquerda) fazendo com que o numero dobre
+let res = n1>> 1 ( joga um bit para direita ) fazendo com que o numero divida   
+console.log(res) 
+
+
+
+____________________________________________________________
+
+  
+
 como pegar a hora atual
 
 var agora = new Date()
@@ -279,6 +298,14 @@ AJAX
 --------------
   servidor 
 nodejs
+
+
+
+
+
+
+
+
 
 
 
