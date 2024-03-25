@@ -52,6 +52,10 @@
             res.innerHTML =(`Não é preciso votar! <br> Você tem apenas ${v} anos. `)
           }
 
+          else if (v >= 16 && v < 18) {
+            res.innerHTML = (`Seu voto é opcional.`)
+          }
+
 
           else if ( v >= 18 && v <= 70 ) {
             res.innerHTML = (`Você é obridado a votar!`)
@@ -63,9 +67,7 @@
           }
 
           
-          else if (v >= 16) {
-            res.innerHTML = (`Seu voto é opcional.`)
-          }
+          
             
          
 
