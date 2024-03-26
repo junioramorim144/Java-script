@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculando valores</title>
+</head>
+<body>
+    <h1>Calculando valores</h1>
+
+    <input type="number" name="txt1" id="txt1"> + - * 
+    <input type="number" name="tsxt2" id="txt2"> <br> <br>
+    <input type="button" value="Somar"onclick="Somar()">
+    <input type="button" value="Subtrair"onclick="Subtrair()">
+    <input type="button" value="Multiplicar"onclick="Multiplicar()">
+    <input type="button" value="Dividir"onclick="Dividir()">
+    <div id="res"></div>
+    
+
+    <script>
+        function Somar () {
+            let t1 = document.querySelector('#txt1')
+            let t2 = document.querySelector('#txt2')
+            let res = document.querySelector('#res')
+
+
+             let n1 = Number(t1.value)
+             let n2 = Number(t2.value)
+             let t = n1 + n2
+
+            res.innerHTML = `O resultado é ${t}`
+
+            }
+
+
+            function Subtrair () {
+            let t1 = document.querySelector('#txt1')
+            let t2 = document.querySelector('#txt2')
+            let res = document.querySelector('#res')
+
+
+             let n1 = Number(t1.value)
+             let n2 = Number(t2.value)
+             let t = n1 - n2
+
+            res.innerHTML = `O resultado é ${t}`
+            
+            }
+             
+            function Multiplicar () {
+            let t1 = document.querySelector('#txt1')
+            let t2 = document.querySelector('#txt2')
+            let res = document.querySelector('#res')
+
+
+             let n1 = Number(t1.value)
+             let n2 = Number(t2.value)
+             let t = n1 * n2
+
+            res.innerHTML = `O resultado é ${t}`
+
+            }
+            
+            
+            function Somar () {
+            let t1 = document.querySelector('#txt1')
+            let t2 = document.querySelector('#txt2')
+            let res = document.querySelector('#res')
+
+
+             let n1 = Number(t1.value)
+             let n2 = Number(t2.value)
+             let t = n1 + n2
+
+            res.innerHTML = `O resultado é ${t}`
+
+            }
+
+            function Dividir () {
+            let t1 = document.querySelector('#txt1')
+            let t2 = document.querySelector('#txt2')
+            let res = document.querySelector('#res')
+
+
+             let n1 = Number(t1.value)
+             let n2 = Number(t2.value)
+             let t = n1 / n2
+
+            res.innerHTML = `O resultado é ${t}`
+
+        } 
+
+
+        
+    </script>
+</body>
+</html>

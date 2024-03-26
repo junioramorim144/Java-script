@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste </title>
+</head>
+<body>
+    <h1>Calculando valores</h1>
+
+    <input type="number" name="txt1" id="txt1"> + - /* 
+    <input type="number" name="tsxt2" id="txt2"> <br> <br>
+    <input type="button" value="Somar"onclick="Somar()">
+    <input type="button" value="Subtrair"onclick="Subtrair()">
+    <input type="button" value="Multiplicar"onclick="Multiplicar()">
+    <input type="button" value="Dividir"onclick="Dividir()">
+    O resultado é <span></span>
+
+
+
+    
+
+    <script>
+
+            let t1 = document.querySelector('#txt1')
+            let t2 = document.querySelector('#txt2')
+            let res = document.querySelector('span')
+
+
+
+        function Somar () {
+
+            res.innerHTML = `O resultado é ${Number(t1.value) + Number(t2.value)}` 
+
+            }
+
+
+            function Subtrair () {
+
+           res.innerHTML = parseInt(t1.value) - parseInt(t2.value)
+            
+            }
+             
+            function Multiplicar () {
+
+            res.innerHTML = parseInt(t1.value) * parseInt(t2.value)
+
+            }
+            
+            
+            function Dividir () {
+
+           res.innerHTML = parseInt(t1.value) / parseInt(t2.value)
+
+        } 
+
+    </script>
+    
+</body>
+</html>
