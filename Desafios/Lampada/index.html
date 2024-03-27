@@ -5,12 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>lampada-teste</title>
 
-    <style>
-        lamp-img :hover {
-            
-            
-        }
-    </style>
+    
 
 
 </head>
@@ -31,16 +26,35 @@
     </main>
 
     <script>
+
+        function islampdead () {
+            return document.getElementById("lamp-img").src.indexOf ('quebrada') > -1
+        }
         function on () {
 
+         if (!islampdead () ) {   
             document.getElementById("lamp-img").src = "img/ligada.jpg" 
-        
+        }
         }
 
         function off () {
 
+        if (!islampdead () ) {  
             document.querySelector("#lamp-img").src = "img/desligada.jpg"
+        }    
         }
+
+        function lampdead () {
+            document.querySelector("#lamp-img").src = "img/quebrada.jpg"
+            
+        }
+
+        document.getElementById('lamp-img').addEventListener ('mouseover',on );
+        document.getElementById('lamp-img').addEventListener ('mouseleave',off );
+        document.getElementById('lamp-img').addEventListener ('dblclick',lampdead);
+        
+
+        
     </script>
     
     
