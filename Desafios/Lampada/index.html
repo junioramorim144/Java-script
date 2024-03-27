@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lampada-teste</title>
+
+    <style>
+        lamp-img :hover {
+            
+            
+        }
+    </style>
+
+
+</head>
+<body>
+    <header>
+        <h1>Teste lampada</h1>
+    </header>
+
+    <main>
+        <div>
+            <img id="lamp-img" src="img/desligada.jpg" alt="desligada">
+        </div>
+        <h1>
+            <input type="button"  value="Ligada" onclick="on ()">
+            <input type="button"  value="desligada" onclick="off ()">
+        </h1>
+
+    </main>
+
+    <script>
+        function on () {
+
+            document.getElementById("lamp-img").src = "img/ligada.jpg" 
+        
+        }
+
+        function off () {
+
+            document.querySelector("#lamp-img").src = "img/desligada.jpg"
+        }
+    </script>
+    
+    
+</body>
+</html>
