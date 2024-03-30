@@ -38,6 +38,7 @@
         <input type="button" value="verde" onclick="verde ()">
         <input type="button" value="amarelo" onclick="amarelo ()">
         <input type="button" value="vermelho" onclick="vermelho ()"> 
+        <input type="button" value="automatico" onclick="automatico ()" >
          
     
     </div>
@@ -59,19 +60,12 @@
     function vermelho () {
         document.getElementById ('img').src = 'img/vermelho.png'
     }
-    let imgatual = 'img/verde.png';
-    let imganterior = 'img/amarelo.png'
-    let imgantesanterior = 'img/vermelho.png'
 
-    setInterval (function() {
-        document.getElementById ('img').src = 'amgatual'
-        let aux = imgatual
-        imgatual = imganterior
-        imganterior = aux 
-
+    function automatico () {
         
-
-    })
+    }
+    
+    
 
     
 </script>
