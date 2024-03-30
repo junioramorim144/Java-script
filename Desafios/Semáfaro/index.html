@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>semafaro</title>
+    <style>
+
+        h1 {
+            font-variant: small-caps;
+        }
+
+        h1, main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+    </style>
+</head>
+<body>
+    
+</body>
+</html>
+
+<header>
+    <h1>Semáfaro</h1>
+</header>
+
+<main>
+    <div>
+       <img id="img" src="img/desligado.png" alt="desligada"> 
+    </div>
+    
+    <div>
+
+        <input type="button" value="desligada" onclick="desligada ()">
+        <input type="button" value="verde" onclick="verde ()">
+        <input type="button" value="amarelo" onclick="amarelo ()">
+        <input type="button" value="vermelho" onclick="vermelho ()"> 
+         
+    
+    </div>
+</main>
+
+<script>
+    function desligada () {
+        document.getElementById('img').src = 'img/desligado.png' 
+    }
+
+    function verde () {
+        document.getElementById('img').src = 'img/verde.png'
+    }
+
+    function amarelo () {
+        document.getElementById ('img').src = 'img/amarelo.png'
+    }
+
+    function vermelho () {
+        document.getElementById ('img').src = 'img/vermelho.png'
+    }
+    let imgatual = 'img/verde.png';
+    let imganterior = 'img/amarelo.png'
+    let imgantesanterior = 'img/vermelho.png'
+
+    setInterval (function() {
+        document.getElementById ('img').src = 'amgatual'
+        let aux = imgatual
+        imgatual = imganterior
+        imganterior = aux 
+
+        
+
+    })
+
+    
+</script>
+
