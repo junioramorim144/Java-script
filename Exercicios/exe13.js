@@ -134,6 +134,15 @@ console.log (testando (10, 15, 40))
     
 */
 
+const bemvindo  = (nome) => alert(`Olá ${nome}`)
+
+const usuario = (callback) => {
+    const nome = console.log ("Digite seu nome:")
+    callback (nome)
+}
+
+usuario(bemvindo)
+
 
 
 
